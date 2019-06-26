@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link type="text/css" rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"> 
+<title>Contact</title>
+	
+<style>
+	* {
+		padding: 0px;
+		margin: 0px;
+	}
+	#map {
+	height: 500px;
+	width: 500px;
+	</style>
+	
+</head>
+
+<body>
+	
+	
+	<div id="top">
+    <div id="logo_cont"><a id="home" href="index.html">
+      <img id="logo" src="logo-test-13.png" style="height:65px;">
+      </a>
+    </div>
+   <ul>
+      <li><a href="contact.html"><p class="write">Contact</p></a></li>
+      <li><a href="people.html"><p class="write">People</p></a></li>
+      <li><a href="publications.html"><p class="write">Publications</p></a></li>
+      <li><a href="labnews.html"><p class="write">Lab News</p></a></li>
+      <li><a href="index.html"><p class="write">Home</p></a></li>
+    </ul> 
+  </div>
+
+	
+	
+<div style="background-color:#122A51">	
+	
+<div class="title" style="color: white; font-family: 'Arial'; font-size: 48px; margin-bottom: 40px;">
+	<br><br>
+
+	<b>Contact us</b>
+	
+</div>
+	
+<div id="map"></div>
+ <script>
+      function initMap() {
+        var uluru = {lat: 40.001833, lng: -83.015211};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe-V3ZHKdYUtrR2s-2FL13m3Y81uROJpM&callback=initMap">
+    </script>
+
+<div id="closer">
+    <table id="t02" class="table2"> 
+      <tr class="tr2">
+        <td id="blah" class="td2">Communication and Cognitive Systems Lab</td>
+        <td class="td2">Location</td>
+      </tr>
+      <tr class="tr2">
+        <td id ="two" class="td2">The Communication and Cognitive Systems Lab is a research laboratory within the School of Communication at the Ohio State University in Columbus, OH.</td>
+
+        <td id ="three" class="td2"><p class="info">Building 046</p><p class="info">242 W 18th Avenue</p><p class="info">Columbus, OH 43210</p></td>
+
+      </tr>
+
+    </table>
+	</div>
+</body>
+</html>
